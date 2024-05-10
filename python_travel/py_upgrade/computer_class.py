@@ -37,3 +37,17 @@ class cat_xzc:
 name=cat_xzc()
 name.name=456789
 print(name.name)
+
+class szc_dog_reflect:
+    def __init__(self):
+        self._name=None
+        self.age=None
+    @property
+    def name(self):
+        return self._name
+    @name.setter
+    def name(self,vlaue):
+        self._name=vlaue
+a=szc_dog_reflect()
+a.name="132456"
+print(a.name)
